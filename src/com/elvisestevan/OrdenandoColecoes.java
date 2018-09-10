@@ -73,7 +73,7 @@ public class OrdenandoColecoes {
     }
 
     private Comparator<String> getStringComparator() {
-        return Comparator.comparing(String::length);
+        return Comparator.comparingInt(String::length);
     }
 
 }

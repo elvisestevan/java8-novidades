@@ -8,6 +8,12 @@ public class Main {
         OrdenandoColecoes ordenandoColecoes = new OrdenandoColecoes();
         long endTime, startTime;
 
+        ordenandoColecoes.getList()
+            .stream()
+            .mapToInt(String::length)
+            .average();
+
+        /*
         startTime = System.currentTimeMillis();
         ordenandoColecoes.ordenarJava7();
         endTime = System.currentTimeMillis();
@@ -16,6 +22,6 @@ public class Main {
         startTime = System.currentTimeMillis();
         ordenandoColecoes.ordenarJava8();
         endTime = System.currentTimeMillis();
-        System.out.println("Tempo de execução Java 8: " + (endTime - startTime));
+        System.out.println("Tempo de execução Java 8: " + (endTime - startTime));*/
     }
 }
