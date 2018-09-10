@@ -73,11 +73,8 @@ public class OrdenandoColecoes {
     }
 
     private Comparator<String> getStringComparator() {
-        return new Comparator<String>() {
-                @Override
-                public int compare(String s, String t1) {
-                    return Integer.compare(s.length(), t1.length());
-                }
+        return (s, t1) -> {
+                return Integer.compare(s.length(), t1.length());
             };
     }
 
